@@ -1,0 +1,29 @@
+.btn {
+    @include absolute-center();
+
+    display: block;
+    position: absolute;
+    border: 1px solid transparent;
+    color: $color-white;
+    font-family: $font-lato;
+    font-weight: 300;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    background: transparent;
+    cursor: pointer;
+    outline: none;
+
+    &__new {
+        top: 20px;
+        z-index: 20;
+    }
+
+    &__roll {
+        bottom: 27%;
+    }
+
+    &__hold {
+        bottom: 20%;
+    }
+}

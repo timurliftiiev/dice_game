@@ -1,0 +1,59 @@
+// New Button Animation
+.btn__line {
+    position: absolute;
+    vertical-align: middle;
+    margin-right: 10px;
+    display: inline-block;
+    background: $color-red;
+    border-radius: 2px;
+    width: 20px;
+    height: 3px;
+    transition: 1s;
+    
+
+    &--top {
+        left: -30px;
+        top: 10px;
+        transform: rotate(0deg);
+    }
+
+    &--bottom {
+        left: -30px;
+        top: 10px;
+        transform: rotate(90deg);
+    }
+}
+
+.btn__new.rotation .btn__line--top {
+    transform: rotate(135deg);
+    transition: .5s;
+}
+
+.btn__new.rotation .btn__line--bottom {
+    transform: rotate(45deg);
+    transition: .5s;
+}
+
+// Roll Button Animation
+.btn__spinner {
+    position: absolute;
+    top: 2px;
+    left: -35px;
+    display: block;
+    border: 2px solid $color-red-rgba;
+    border-right: 2px solid $color-white-rgba;
+    border-radius: 50%;
+    background: transparent;
+    width: 20px;
+    height: 20px;
+    transition: 1s;
+}
+
+.btn__roll.roll .btn__spinner {
+    transform: rotate(1060deg);
+}
+
+// Active Player
+.dice__player.active .dice__pig {
+    opacity: 1;
+}

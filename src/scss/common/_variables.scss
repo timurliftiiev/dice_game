@@ -1,0 +1,16 @@
+// Fonts
+$font-montserrat: 'Montserrat', sans-serif;
+$font-lato: 'Lato', sans-serif;
+
+// Colors
+$color-white: #fff;
+$color-gray--dark: #333;
+$color-red: #FF95A2;
+$color-red-rgba: rgba(255, 149, 162, .3);
+$color-white-rgba: rgba(255, 255, 255, .3);
+
+// Mixins
+@mixin absolute-center {
+    left: 50%;
+    transform: translate(-50%);
+}

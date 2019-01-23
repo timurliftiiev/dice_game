@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dice</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Montserrat:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    
+
+   <div class="container">
+        <div class="dice">
+
+                <button id="js-btn__new" class="btn btn__new">
+                    <span class="btn__line btn__line--top"></span>
+                    <span class="btn__line btn__line--bottom"></span>
+                    new game</button>
+    
+            <div class="dice__player active" id="js-player-0">
+                <h2 class="dice__name" id="js-name-0">Player 1</h2>
+                <i class="fas fa-piggy-bank dice__pig dice__pig--left"></i>
+                <span class="dice__total" id="js-total-0">0</span>
+                <div class="dice__inner">
+                    <span class="dice__current">current</span>
+                    <span class="dice__scores" id="js-scores-0">0 </span>
+                </div>
+            </div>
+    
+            <div class="dice__player" id="js-player-1">
+                <h2 class="dice__name" id="js-name-1">Player 2</h2>
+                <i class="fas fa-piggy-bank dice__pig dice__pig--right"></i>
+                <span class="dice__total" id="js-total-1">0</span>
+                <div class="dice__inner">
+                    <span class="dice__current">current</span>
+                    <span class="dice__scores" id="js-scores-1">0 </span>
+                </div>
+            </div>
+
+            <div class="dice__cover"></div>
+    
+            <button id="js-btn__roll" class="btn btn__roll">
+                <span class="btn__spinner"></span>
+                roll</button>
+            <button id="js-btn__hold" class="btn btn__hold">hold</button>
+    
+            <img src="img/dice-1.png" alt="" class="dice__img dice__img--top" id="js-dice-1">
+            <img src="img/dice-2.png" alt="" class="dice__img dice__img--bottom" id="js-dice-2">
+
+            <input type="text" class="dice__input" id="js-input" placeholder="100">
+    
+        </div>
+    </div>
+
+    <script src="js/main.min.js"></script>
+</body>
+</html>

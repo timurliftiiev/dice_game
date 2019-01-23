@@ -1,0 +1,131 @@
+.dice {
+    position: relative;
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    border-radius: 15px;
+    padding: 90px 0 120px;
+    background: $color-gray--dark;
+
+    &__name,
+    &__inner,
+    &__total {
+        position: relative;
+        z-index: 10;
+    }
+
+    &__player {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        text-align: center;
+    }
+
+    &__name {
+        position: relative;
+        display: inline-block;
+        font-family: $font-lato;
+        font-weight: 400;
+        font-size: 50px;
+        color: $color-white;
+    }
+
+    &__total {
+        display: inline-block;
+        margin-bottom: 150px;
+        font-weight: 300;
+        font-size: 100px;
+        color: $color-red;
+    }
+
+    &__inner {
+        width: 100px;
+        margin: 0 auto;
+        padding: 10px 0;
+        text-align: center;
+        border: 1px solid $color-red;
+        border-radius: 5px
+    }
+
+    &__current {
+        position: relative;
+        z-index: 10;
+        font-size: 20px;
+        color: $color-white;
+    }
+
+    &__scores {
+        display: block;
+        font-size: 30px;
+        color: $color-red;
+    }
+
+    &__cover {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 100%;
+        background: $color-red;
+        opacity: .1;
+        transition: 1s;
+        z-index: 0;
+    }
+
+    &__pig {
+        position: absolute;
+        font-size: 20px;
+        color: $color-red;
+        opacity: 0;
+        transition: .5s;
+
+        &--left {
+         top: 113px;
+         left: 100px;
+        }
+
+        &--right {
+         top: 113px;
+         right: 100px;
+        }
+    }
+
+    &__img {
+        @include absolute-center();
+
+        position: absolute;
+        height: 60px;
+
+        &--top {
+            top: 30%;
+        }
+
+        &--bottom {
+            top: 40%;
+        }
+    }
+
+    &__input {
+        @include absolute-center();
+
+        width: 100px;
+        position: absolute;
+        bottom: 50px;
+        padding: 5px 30px;
+        border: 1px solid $color-red-rgba;
+        background: transparent;
+        font-size: 20px;
+        font-weight: 300;
+        color: $color-white;
+        outline: none;
+
+        &:focus {
+            border: 1px solid $color-red;
+        }
+
+        &::placeholder {
+            font-weight: 300;
+            color: $color-white-rgba;
+        }
+    }
+}
